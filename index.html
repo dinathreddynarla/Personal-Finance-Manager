@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border: 2px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+
+    <div class="input">
+        <input type="text" placeholder="Description" class="description" required>
+        <input type="number" placeholder="Amount"  class="amount" required>
+        <select name="type" id="type">
+            <option value="Income">Income</option>
+            <option value="Expese">Expense</option>
+        </select>
+        <button id="add">Add Transaction</button>
+    </div>
+    <table id="table">
+        <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>type</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
