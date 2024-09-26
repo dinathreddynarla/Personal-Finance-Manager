@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Expense Tracker</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- jsPDF Library -->
-    <link rel="stylesheet" href="./style.css">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
+    <h1>Personal Finance Tracker</h1>
 
-    <h1>Personal Expense Tracker</h1>
-    <h2>Balance: ₹ <span id="balance">0</span></h2>
-
-    <div class="input">
-        <input type="text" placeholder="Description" class="description" required>
-        <input type="number" placeholder="Amount" class="amount" required>
-        <select name="type" id="type">
+    <div id="form">
+        <input type="text" class="description" placeholder="Description">
+        <input type="number" class="amount" placeholder="Amount">
+        <select id="type">
             <option value="Income">Income</option>
             <option value="Expense">Expense</option>
         </select>
         <button id="add">Add Transaction</button>
     </div>
+
+    <h2>Balance: ₹<span id="balance">0</span></h2>
 
     <table id="table">
         <tr>
@@ -31,11 +31,10 @@
         </tr>
     </table>
 
-    
-    <img id="empty-img" src="./notransaction.png" alt="No transactions">
+    <img id="empty-img" src="./notransaction.png" style="display: none;" alt="No transactions">
 
-    
-    <button id="download-pdf">Download as PDF</button>
-    <script src="./script.js"></script>
+    <button id="pdf-btn">Download PDF</button>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -66,8 +66,13 @@ th {
     color: white;
 }
 
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
 td button {
-    background-color: #e74c3c;
+    background-color: red;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -76,15 +81,7 @@ td button {
 }
 
 td button:hover {
-    background-color: #c0392b;
-}
-
-td {
-    text-align: center;
-}
-
-.delete-btn {
-    display: inline-block;
+    background-color: darkred;
 }
 
 #empty-img {
