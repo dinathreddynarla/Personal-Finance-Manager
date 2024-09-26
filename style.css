@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="number"] {
+    width: 200px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td button:hover {
+    background-color: #c0392b;
+}
+
+td {
+    text-align: center;
+}
+
+#empty-img {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
